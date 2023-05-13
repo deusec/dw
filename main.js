@@ -60,7 +60,7 @@ conn.user = {
 }
 if (opts['test']) {
   conn.user = {
-    jid: '2219191@s.whatsapp.net',
+    jid: '0@s.whatsapp.net',
     name: 'test',
     phone: {}
   }
@@ -97,7 +97,7 @@ if (opts['test']) {
       }
     })
   }
-  rl.on('line', line => conn.sendMessage('123@s.whatsapp.net', line.trim(), 'conversation'))
+  rl.on('line', line => conn.sendMessage('0@s.whatsapp.net', line.trim(), 'conversation'))
 } else {
   rl.on('line', line => {
     process.send(line.trim())
