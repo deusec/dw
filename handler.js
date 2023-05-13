@@ -104,8 +104,8 @@ module.exports = {
           if (!('jadibot' in setting)) setting.jadibot = false
         } else global.db.data.settings[this.user.jid] = {
           anticall: false,
-          autoread: false,
-          nyimak: false,
+          autoread: true,
+          nyimak: true,
           restrict: false,
           self: false,
           pconly: false,
